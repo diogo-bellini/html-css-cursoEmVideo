@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Fontes</title>
+    <style>
+        /* Fonte do GOOGLE FONTS */ 
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');  
+        
+        /*  Fontes que não tem no google fontes (font-face) */
+        /*  Tipos de format()
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-aat
+            -svg
+        */
+        @font-face {
+            font-family: "nomeQualquer";
+            src: url("fonts/Planets 2.otf") format("opentype");
+        }
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas: 
+            cm, mm, in (polegada), px, pt, pc (paica)
+
+            Medidas Relativas: 
+            em (a altura do M), ex (a altura x), rem (a altura do M da fonte do body), vw (a largura da tela), vh (a altura da tela) 
+            
+            16px = 1em
+
+            !!!RECOMENDAÇÃO: px ou em
+            */
+            font-size: 1em;
+            /*
+            lighter normal bold bolder
+            100 ... 900
+            */
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1{
+            /*
+            Shorthand font
+            font: font-style font-weight font-size font-family;
+            */
+            font: italic normal 2em 'JetBrains Mono';
+        }
+
+        #teste{
+            font-family: nomeQualquer;
+        }
+
+        h1#alinhamento{
+            text-align: center;
+        }
+        h2#alinhamento{
+            text-align: right;
+        }
+        p#alinhamento{
+            text-align: justify;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Fontes</h1>
+    <p id="teste">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima corporis atque itaque minus magnam in culpa sapiente eaque ipsam. Dignissimos perspiciatis cupiditate voluptatum enim quia commodi deserunt rerum suscipit eum!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis placeat porro molestiae, quas asperiores hic natus cum necessitatibus, nobis sapiente sit minima saepe nihil distinctio. Praesentium aspernatur nostrum in debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quas expedita rem, voluptas temporibus nostrum officiis possimus sed ipsa soluta pariatur asperiores iure sequi nulla ullam, quos reiciendis sunt. At. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, itaque, provident laudantium maiores laboriosam repellendus veniam officiis placeat, in necessitatibus voluptas cum blanditiis voluptates nostrum nobis omnis ut? Aliquid, maiores.</p>
+
+    <h1 id="alinhamento">Tipos de Alinhamento</h1>
+    <h2 id="alinhamento">Subtítulo</h2>
+    <p id="alinhamento">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolor dolore illo officiis eius voluptatum. Totam dolorum recusandae rem obcaecati quae quaerat voluptas soluta provident. Eos ipsum iure aspernatur praesentium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam a laudantium cum odit aut. Esse porro exercitationem soluta illum. At, asperiores odio modi assumenda incidunt ipsa fuga voluptatibus quaerat minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate odit ea excepturi, quas ipsa? Possimus nam voluptas, illo amet beatae sed earum, quis laboriosam veniam quod magni nobis ab.</p>
+</body>
+</html>

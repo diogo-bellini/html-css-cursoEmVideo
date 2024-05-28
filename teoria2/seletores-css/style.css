@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*
+
+hierarquia:
+-id (só pode um elemento)
+-class (pode vários)
+-generico
+
+*/
+
+body{
+    background-color: rgb(192, 255, 192);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(1, 64, 1);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(1, 64, 1);
+    color: white;
+}
+
+h2{
+    color:rgb(19, 31, 19);
+}
+
+.basico{
+    color: green;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(213, 213, 2);
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: yellow;
+}
+
+div#exemplo{
+    background-color: white;
+    border-radius: 12px;
+    width: 200px;
+}
+
+p#para_tutorial{
+    text-align: center;
+    font-weight: bold;
+}
