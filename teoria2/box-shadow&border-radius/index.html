@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        nav{
+            margin: 1em;
+            text-align: center;
+            background-color: lightgray;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px black;
+        }
+        nav > a{
+            margin: 5px;
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        main{
+            background-color: lightgray;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        article > h2{
+            text-align: center;
+            background-color: rgb(138, 137, 137);
+            border-radius: 20px;
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 1px;
+            margin: 5px 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div > pre{
+            font-family: 'JetBrains Mono';
+        }
+
+        div#bola{
+            margin: auto;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site para sombras</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Artigo do mundo todo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam exercitationem illum dolorum harum placeat provident perspiciatis qui quam laboriosam non fugiat perferendis neque, itaque praesentium at odit? Obcaecati, tempora! Minima!</p>
+                <aside>Escrito por...</aside>
+            </article>
+        </section>
+    </main>
+    <div id="bola">
+    </div>
+    <footer>
+        <p>Desenvolvido por DIOGO</p>
+    </footer>
+    <div>
+        <p><pre>
+            <strong>box-shadow: horizontal vertical espalhamento cor;</strong>
+            Da para configurar a sombra pelo navegador depois copiar e colar
+
+            <strong>border-radius: top-left top-right bottom-right bottom-left;</strong>
+        </pre></p>
+    </div>
+</body>
+</html>

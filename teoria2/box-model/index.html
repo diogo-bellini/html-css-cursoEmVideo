@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+        /*SHORTHANDS*/
+        /*padding: top right bottom left;*/
+        /*margin: top right bottom left;*/
+        /*border: width style color;*/
+        /*outline: width style color;*/
+        h1{
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;
+
+            padding-top: 30px;
+            padding-right: 0px;
+            padding-bottom: 2px;
+            padding-left: 50px;
+
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            */
+            margin:auto;/* -> centraliza*/
+        }
+
+        a{
+            border-width: 10px;
+            border-style: dashed;
+            border-color: aqua;
+
+            padding: 3px 20px 20px 1px;
+        }
+
+        p{
+            border-width: 5px;
+            border-style: dotted;
+            border-color: brown;
+
+            margin-top: 40px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-left: 10px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de CAIXA BOX LEVEL display: block;</h1>
+    <p>Paragrafo também são CAIXAS BOX LEVEL, mas <a href="#">links</a> são CAIXAS INLINE LEVEL display: inline</p>
+</body>
+</html>
