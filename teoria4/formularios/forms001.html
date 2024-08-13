@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- autocomplete -> mostra sugestões para o usuário -->
+     <!-- get -> aparece na url
+          post -> nao aparece na url, mas nao é seguro. estudar https   -->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!-- label = etiqueta
+             linka o texto com a caixa
+             recebe o id   -->
+        <p><label for="nome">Nome: </label>
+            <input type="text" name="Nome" id="nome"></p>
+        <p><label for="sobrenome">Sobrenome: </label>
+            <input type="text" name="Sobrenome" id="sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
